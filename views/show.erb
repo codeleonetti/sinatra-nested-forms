@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Pirates</title>
+ </head>
+ <body>
+    
+    
+    <p>Pirates Name: <%=@new_pirates%></p>
+    <p>Pirates Weight: <%=@new_pirates%></p>
+    <p>Pirates Height: <%=@new_pirates%></p>
+   
+<h2>Display your first ship here</h2>
+    <%@ships.each.with_index do |ship, index|%> 
+        <div class="ship">
+    <p>First Ship Name: <%=ship.ship_name_1%></p>
+    <p>First Ship Type: <%=ship.ship_type_1%></p>
+    <p>First Ship Booty: <%=ship.ship_booty_1%></p>
+    <%end%>
+
+    <%@ships.each.with_index do |ship, index|%>
+        <div class="ship">
+    <p>Second Ship Name: <%=ship.ship_name_2%></p>
+    <p>Second Ship Type: <%=ship.ship_type_2%></p>
+    <p>Second Ship Booty: <%=ship.ship_booty_2%></p>
+    <%end%>
+ </body>
+</html>
+
+
+<h2>Display your second ship here</h2>

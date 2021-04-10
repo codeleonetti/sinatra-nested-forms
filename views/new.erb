@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <h1> Create Your Pirate </h1>
+    <br><br>
+        <form method="post" action="/pirates">
+            <label> Pirate Name:</label>
+            <input type="text" name="pirate[name]"><br/>
+            <label> Pirate Weight:</label>
+            <input type="text" name="pirate[weight]"><br/>
+            <label> Pirate Height:</label>
+            <input type="text" name="pirate[height]"><br/>
+        
+
+    <h1> Create Your Ships </h1>
+    <br><br>
+        
+            <label> First Ship Name:</label>
+            <input type="text" name="pirate[ships][][name]"><br/>
+            <label> First Ship Type:</label>
+            <input type="text" name="pirate[ships][][type]"><br/>
+            <label> First Ship Booty:</label>
+            <input type="text" name="pirate[ships][][booty]"><br/>
+            <label> Second Ship Name:</label>
+            <input type="text" name="pirate[ships][][name]"><br/>
+            <label> Second Ship Type:</label>
+            <input type="text" name="pirate[ships][][type]"><br/>
+            <label> Second Ship Booty:</label>
+            <input type="text" name="pirate[ships][][booty]"><br/>
+            <input type="submit" id = "Submit"/>
+        </form> 
+
+</body>
+</html>
